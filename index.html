@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор стоимости услуги</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Калькулятор стоимости услуги</h1>
+        <form id="calc-form" novalidate>
+            <label for="quantity">Количество</label>
+            <input id="quantity" name="quantity" type="text" value="1" autocomplete="off">
+
+            <fieldset>
+                <legend>Тип услуги</legend>
+                <label class="inline">
+                    <input type="radio" name="service" value="0" checked>
+                    Базовая — 1000 ₽
+                </label>
+                <label class="inline">
+                    <input type="radio" name="service" value="1">
+                    Стандарт — 2000 ₽
+                </label>
+                <label class="inline">
+                    <input type="radio" name="service" value="2">
+                    Премиум — 3000 ₽
+                </label>
+            </fieldset>
+
+            <div id="options-block" class="hidden">
+                <label for="options">Опция</label>
+                <select id="options" name="options"></select>
+            </div>
+
+            <div id="property-block" class="hidden">
+                <label class="inline">
+                    <input id="property" name="property" type="checkbox">
+                    <span id="property-title"></span>
+                </label>
+            </div>
+        </form>
+        <p id="error" class="error" role="alert"></p>
+        <p id="result" class="result"></p>
+    </main>
+</body>
+</html>

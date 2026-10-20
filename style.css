@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f8;
+    margin: 0;
+}
+
+main {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 12px 0 4px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.error {
+    color: #c00;
+}
+
+.result {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+fieldset {
+    margin: 16px 0 0;
+    padding: 8px 12px;
+}
+
+label.inline {
+    display: block;
+    margin: 6px 0;
+}
+
+label.inline input {
+    width: auto;
+    margin-right: 6px;
+}
+
+.hidden {
+    display: none;
+}
